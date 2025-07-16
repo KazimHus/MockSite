@@ -1,56 +1,39 @@
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { heroVideo, smallHeroVideo } from '../utils'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { profile_img } from '../utils'
+
 
 const Hero = () => {
-
-  const [videoSrc, setVideoSrc] = useState(window.
-    innerWidth < 760 ? smallHeroVideo : heroVideo
-  )
-
-  const handleVideoSrcSet = () => {
-    if(window.innerWidth < 760) {
-      setVideoSrc(smallHeroVideo)
-    }
-    else
-    {
-      setVideoSrc(heroVideo)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', handleVideoSrcSet)
-
-    return () => {
-      window.removeEventListener('resize', handleVideoSrcSet)
-    }
-  }, [])
-
-  useGSAP(( ) => {
-    gsap.to('#hero', {opacity: 1, delay: 2 })
-    gsap.to('#cta', {opacity: 1, y: -50, delay: 2 })
+  useGSAP(() => {
+    gsap.to('#about-1', { opacity: 1, delay: 1 })
+    gsap.to('#about-2', { opacity: 1, delay: 2 })
+    gsap.to('#about-3', { opacity: 1, delay: 3 })
   }, [])
 
   return (
-    <section className="w-full nav-height bg-black
-    relative">
-      <div className="h-5/6 w-full flex-center flex-col">
-      <p id="hero" className="hero-title">iPhone 15 pro</p>
-        <div className="md:w-10/12 w-9/12">
-          <video className= "pointer-events-none" 
-          autoPlay muted playsInline={true} key= {videoSrc}>
-            <source src={videoSrc} type = "video/mp4" />
-          </video>
-        </div>
+    <section className="bg-black text-white flex flex-col md:flex-row items-center justify-center px-10 py-20 gap-16 min-h-[70vh]">
+      <h1 id="title" className="text-4xl font-bold text-center mb-16">About Me</h1>
+      {/* Left side: Profile Image */}
+      <div className="flex justify-center items-center">
+        <img 
+          src={profile_img} 
+          alt="Kazim's portrait" 
+          className="w-64 h-64 rounded-full object-cover shadow-xl"
+        />
       </div>
 
-      <div 
-        id = "cta" 
-        className="flex flex-col items-center opacity-0 translate-y-20"
-      >
-        <a href = "#highights" className="btn" > Buy </a>
-        <p className="font-normal text-xl"> From $199/month or $999 </p>
+      {/* Right side: About Me */}
+      <div className="max-w-lg flex flex-col gap-6 text-left">
+        <p id="about-1" className="opacity-0 transition-opacity duration-500">
+          I'm Kazim, a front-end developer and digital artisan who loves creating immersive experiences. Clean code and sleek visuals are my jam.
+        </p>
+        <p id="about-2" className="opacity-0 transition-opacity duration-500">
+          I thrive at the intersection of creativity and logic, turning ideas into fluid, intuitive interfaces that delight users and elevate brands.
+        </p>
+        <p id="about-3" className="opacity-0 transition-opacity duration-500">
+          Whether I'm building product pages or portfolios, my mission is simple: blend clarity, emotion, and elegance into every pixel I push.
+        </p>
       </div>
     </section>
   )

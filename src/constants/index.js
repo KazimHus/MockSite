@@ -1,87 +1,57 @@
-import {
-  blackImg,
-  blueImg,
-  highlightFirstVideo,
-  highlightFourthVideo,
-  highlightSecondVideo,
-  highlightThirdVideo,
-  whiteImg,
-  yellowImg,
-} from "../utils";
+export const navLists = ["Home", "Experience", "Skills", "Education", "Projects", "Hobbies", "Contact" ];
 
-export const navLists = ["Store", "Mac", "iPhone", "Support"];
-
-export const hightlightsSlides = [
+export const Experience = [
   {
     id: 1,
-    textLists: [
-      "Enter A17 Pro.",
-      "Game‑changing chip.",
-      "Groundbreaking performance.",
-    ],
-    video: highlightFirstVideo,
-    videoDuration: 4,
+    date: ["July 2025 – Current"],
+    title: ["Web Developer - Internship"],
+    company: ["Bilimetrix"],
+    description: [
+      "Built a serum bilirubin vs. postnatal age chart with clinical risk zones to support neonatal jaundice prediction",
+      "Plotted patient bilirubin values on the chart for visual diagnosis support",
+      "Collaborating in a remote agile team with weekly standups and paired programming",
+      "Technologies: C#, Html5, Asp.Net, MySQL, Git"
+    ]
   },
   {
     id: 2,
-    textLists: ["Titanium.", "So strong. So light. So Pro."],
-    video: highlightSecondVideo,
-    videoDuration: 5,
+    date: ["Sep 2024 – June 2025"],
+    title: ["Software Engineer - Capstone Internship"],
+    company: ["F5 (Seattle University)"],
+    description: [
+      "Collaborated with classmates and F5 engineer mentors to develop an AI-driven system that generates LUA diagnostic scripts for known bugs, cutting manual effort by 50%",
+      "Parsed bug data from the knowledge base and generated scripts via F5-GPT using structured prompts (~85% match)",
+      "Designed reusable prompt templates with embedded examples to generalize across bug categories",
+      "Developed a full stack React + Flask app for engineers to search bugs and download scripts",
+      "Added a validation layer for syntax/structure (~95% issue catch rate) and integrated CI/CD with Azure DevOps",
+      "Held weekly sprint reviews with F5 mentors and maintained clear technical documentation",
+      "Curated a version-controlled bug database linked to active heuristics for reliable script generation",
+      "Technologies: F5 GPT-4o, Python, Flask, React.js, Azure DevOps, Postman, pandas, openpyxl, requests, urllib3, axios"
+    ]
   },
   {
     id: 3,
-    textLists: [
-      "iPhone 15 Pro Max has the",
-      "longest optical zoom in",
-      "iPhone ever. Far out.",
-    ],
-    video: highlightThirdVideo,
-    videoDuration: 2,
+    date: ["Oct 2023 – June 2025"],
+    title: ["Learning Facilitator"],
+    company: ["Seattle World School"],
+    description: [
+      "Supported Grade 9–12 students in Math, Physics, Chemistry, Astrology, and Computer Science during class sessions",
+      "Collaborated with teachers and Microsoft TEALS volunteers to assist instruction and clarify assignments",
+      "Skills: Communication, peer collaboration, initiative, student mentorship, visual explanation, adaptability"
+    ]
   },
   {
     id: 4,
-    textLists: ["All-new Action button.", "What will yours do?."],
-    video: highlightFourthVideo,
-    videoDuration: 3.63,
-  },
-];
+    date: ["Jan 2023 – May 2023"],
+    title: ["Restaurant Team Member"],
+    company: ["The Homegrown Group"],
+    description: [
+      "Worked full-day shifts from opening to closing, rotating between roles including cook, prep, and dishwasher",
+      "Prepared sandwiches and salads while maintaining food safety standards",
+      "Collaborated with team members to ensure smooth kitchen operations and supported others as needed during peak hours",
+      "Maintained a clean and organized work environment under time pressure",
+      "Skills: Time management, teamwork, multitasking, food safety, adaptability, attention to detail"
+    ]
+  }
+]
 
-export const models = [
-  {
-    id: 1,
-    title: "iPhone 15 Pro in Natural Titanium",
-    color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
-    img: yellowImg,
-  },
-  {
-    id: 2,
-    title: "iPhone 15 Pro in Blue Titanium",
-    color: ["#53596E", "#6395ff", "#21242e"],
-    img: blueImg,
-  },
-  {
-    id: 3,
-    title: "iPhone 15 Pro in White Titanium",
-    color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
-    img: whiteImg,
-  },
-  {
-    id: 4,
-    title: "iPhone 15 Pro in Black Titanium",
-    color: ["#454749", "#3b3b3b", "#181819"],
-    img: blackImg,
-  },
-];
-
-export const sizes = [
-  { label: '6.1"', value: "small" },
-  { label: '6.7"', value: "large" },
-];
-
-export const footerLinks = [
-  "Privacy Policy",
-  "Terms of Use",
-  "Sales Policy",
-  "Legal",
-  "Site Map",
-];
