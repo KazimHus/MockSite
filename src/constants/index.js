@@ -1,5 +1,33 @@
 export const navLists = ["Home", "Experience", "Skills", "Education", "Projects", "Hobbies", "Contact" ];
 
+export const About = [
+  {
+    born: {
+      birthplace: "Islamabad, Pakistan",
+      birthyear: 2003,
+      flagIcon: "pakistanFlag", // import in utils/index.js
+      university: "Seattle University",
+      universityIcon: "SeattleU", // import in utils/index.js
+      enrollmentYear: 2021
+    },
+    paragraph1: [
+      "I entered university without any prior exposure to coding, and the field felt overwhelming at first. Many peers warned me about the steep learning curve — and they were right. During my second quarter, I faced one of the toughest instructors in the program. To make things even harder, the course was shifted online for a month. I genuinely thought I would fail, but I managed to pass with a C+. That moment was pivotal; it showed me that effort could overcome doubt. Since then, I’ve taken initiative to explore new directions in tech and challenge myself beyond the classroom."
+ 
+    ],
+    paragraph2: [
+      "I've consistently sought growth, whether by overloading my academic schedule or applying for work authorization to support myself. I worked early morning shifts at a sandwich shop, often starting at 6am — a job few would volunteer for. Despite the physical demands, I valued staying busy and building discipline. I've also experienced living in a low-income apartment with difficult conditions, which pushed me to develop resilience and appreciate the importance of perseverance."
+    ],
+    paragraph3: [
+      "With earnings from my part-time jobs and tutoring, I saved enough to build my own PC — a step toward realizing my long-held dream of designing video games. During that time, my father's illness required me to take a quarter off and return home. Determined to graduate with my cohort, I took overloaded course schedules and increased my work hours to make up for lost time. These experiences have shaped me into a well-rounded individual, grounded in persistence and empathy. I believe the strength of one’s character far outweighs technical skill — because skills can always be learned."
+    ],
+    quote: {
+      text: "Find what you love and let it kill you.",
+      author: "Charles Bukowski"
+    }
+  }
+]
+
+
 export const Experience = [
   {
     id: 1,
