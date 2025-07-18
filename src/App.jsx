@@ -2,6 +2,7 @@ import About from './components/About'
 import Experience from './components/WorkExperience'
 import Navbar from './components/Navbar'
 import Skills from './components/Skills'
+import Education from './components/Education'
 
 const App = ( ) => {
   return (
@@ -10,6 +11,7 @@ const App = ( ) => {
       <About />
       <Experience />
       <Skills />
+      <Education />
     </main>
   )
 }

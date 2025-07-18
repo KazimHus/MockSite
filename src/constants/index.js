@@ -24,7 +24,6 @@ export const About = [
   }
 ]
 
-
 export const Experience = [
   {
     id: 1,
@@ -80,3 +79,62 @@ export const Experience = [
   }
 ]
 
+export const university = [
+  {
+    date: ["September 2021 - June 2025"],
+    major: ["Bachelor of Science (B.S.) in Computer Science"],
+    minor: ["Minor in Mathematics"],
+    scholarship: ["Merit Scholarship: $23,500 per annum "],
+
+    c1: [
+      "Machine Learning: Python, Google Collab", 
+      "Decision trees, Bayesian classification, clustering, and neural networks"
+    ],
+
+    c2: [
+      "Mobile Software Design: Android Studio, Kotlin",
+      "Software architecture and design, compatibility, usability, and deployment"
+    ],
+
+    c3: [
+      "Object-Oriented Development: C++, C#",
+      "Interfaces, contracts, containment, composition, inheritance, overloading and polymorphism. Analysis of alternative design choices, software maintainability and code reuse"
+    ],
+
+    c4: [
+      "Languages and Computation: ",
+      "Programming language features, theory of computation, and functional programming with topics like types, grammars, and higher-order functions"
+    ],
+
+    c5: [
+      "Design & Analysis of Algorithm: ",
+      "Algorithm design strategies, analysis, parallel algorithms, and computational intractability"
+    ],
+
+    c6: [
+      "Big Data Analytics: Java, Python",
+      "Hadoop architecture and ecosystem tools, applying MapReduce, Hive, and Spark to develop analytics for large-scale data processing."
+    ],
+
+    c7: [
+      "Tenchical Communication & Project Management: Agile, Scrum, Sprints, Modeling",
+      "Writing, speaking, teamwork, electronic communication and structure and content of software documentation. Planning, cost estimation, scheduling, and managing risks, quality and change"
+    ],
+
+    c8: [
+      "Calculus I, II, III",
+      "Limits, derivatives, and integrals of rational, exponential, and trigonometric functions; applications of calculus including infinite series, Taylor’s theorem, vectors, polar coordinates, and solid analytic geometry."
+    ],
+
+    c9: [
+      "Probability and Statistics: R language",
+      "Probability models, random variables, statistical inference, and applications"
+    ],
+    
+    c10: [
+      "Advanced Math",
+      "logic, proofs, quantifiers, set theory, induction, relations, functions, cardinality, with emphasis on mathematical reasoning and proof writing"
+    ]
+
+  }
+]
