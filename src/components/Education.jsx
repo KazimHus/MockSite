@@ -11,9 +11,9 @@ const Education = () => {
     }))
 
   return (
-    <section id="education" className="flex flex-col md:flex-row w-full min-h-screen bg-main text-grey pt-24">
+    <section id="education" className="flex flex-col md:flex-row w-full min-h-screen bg-main text-black pt-24">
 
-      <div className="w-full md:w-[80%] flex items-end justify-start px-24 pb-48">
+      <div className="w-full md:w-[80%] flex items-end justify-start px-24 pb-56 text-grey">
         <h1 className="text-7xl pirata-one-regular">{data.name[0]}</h1>
       </div>
 

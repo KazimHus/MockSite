@@ -42,10 +42,10 @@ const Navbar = () => {
               key={link}
               href={`#${link}`}
               id={`navbar-link-${link}`}
-              className={`px-5 texturina-text text-base cursor-pointer transition-all duration-200 ${
+              className={`px-5 texturina-text-bold text-base cursor-pointer transition-all duration-200 ${
                 activeLink === link
-                  ? 'text-black texturina-text-bold glow font-semibold'
-                  : 'text-grey hover:text-white'
+                  ? 'text-brightorange texturina-text-bold glow'
+                  : 'hover:text-black'
               }`}
             >
               {name}

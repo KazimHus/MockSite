@@ -28,11 +28,11 @@ const WorkExperience = () => {
   }, [])
 
   return (
-    <section id="workexperience" className="text-grey bg-main px-5 min-h-screen pt-36">
+    <section id="workexperience" className="text-black bg-main px-5 min-h-screen pt-36">
       <div className="flex flex-col items-center gap-16">
         {Experience.map((job, index) => (
           <div key={job.id} id={`job-${index}`} className="transition duration-500 w-full max-w-2xl text-left">
-            <p className="text-sm text-bright-orange font-semibold mb-2 texturina-text-bold">{job.date[0]}</p>
+            <p className="text-base text-bright-orange font-semibold mb-2 texturina-text-bold">{job.date[0]}</p>
             <h2 className="text-xl pirata-one-regular ">{job.title[0]}</h2>
             <h3 className="text-xl mb-4 pirata-one-regular">{job.company[0]}</h3>
             <ul className="list-disc list-inside space-y-2 texturina-text">

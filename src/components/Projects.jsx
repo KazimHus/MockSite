@@ -30,7 +30,7 @@ const Projects = () => {
         <div className="space-y-10">
           {projects.map((proj, index) => (
             <div key={index} className="bg-skills-grey p-6 rounded-xl shadow-md group">
-              <h2 className="text-2xl font-semibold pirata-one-regular text-bright-yellow mb-2">
+              <h2 className="text-2xl font-semibold pirata-one-regular text-bright-orange mb-2">
                 {proj.title}
               </h2>
               <p className="texturina-text mb-3">{proj.description}</p>
