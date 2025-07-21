@@ -19,14 +19,14 @@ const Navbar = () => {
     navLists.forEach(({ link }) => {
       ScrollTrigger.create({
         trigger: `#${link}`,
-        start: 'top 80%',   // ensures shorter sections are captured
-        end: 'bottom 20%',  // stops when bottom reaches 20% from top
+        start: 'top 90%',
+        end: 'bottom 10%',  
         onEnter: () => setActiveLink(link),
         onEnterBack: () => setActiveLink(link)
       })
     })
 
-    ScrollTrigger.refresh() // ensures triggers are accurate on load
+    ScrollTrigger.refresh() 
 
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill())
@@ -34,7 +34,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm py-5 sm:px-10 px-5 flex justify-between items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-main bg-opacity-100 backdrop-blur-sm py-5 sm:px-10 px-5 flex justify-between items-center">
       <nav className="flex w-full screen-max-width">
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map(({ name, link }) => (
@@ -42,10 +42,10 @@ const Navbar = () => {
               key={link}
               href={`#${link}`}
               id={`navbar-link-${link}`}
-              className={`px-5 text-sm cursor-pointer transition-all duration-200 ${
+              className={`px-5 texturina-text text-base cursor-pointer transition-all duration-200 ${
                 activeLink === link
-                  ? 'text-white glow font-semibold'
-                  : 'text-gray-400 hover:text-white'
+                  ? 'text-black texturina-text-bold glow font-semibold'
+                  : 'text-grey hover:text-white'
               }`}
             >
               {name}

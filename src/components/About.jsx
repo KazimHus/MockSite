@@ -1,46 +1,28 @@
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-import { profile_img } from '../utils'
-import { About as AboutData } from '../constants'
-
-const data = AboutData[0]
+import { profile_image } from '../utils'
 
 const About = () => {
-  useGSAP(() => {
-    gsap.to('#about-1', { opacity: 1, delay: 0.5 })
-    gsap.to('#about-2', { opacity: 1, delay: 1 })
-    gsap.to('#about-3', { opacity: 1, delay: 1.5 })
-    gsap.to('#about-quote', { opacity: 1, delay: 2 })
-  }, [])
-
   return (
-    <section id="about" className="bg-black text-white px-10 min-h-screen flex flex-col md:flex-row items-center justify-center gap-16">
+    <section
+      id="about"
+      className="text-grey bg-main px-10 min-h-screen flex flex-col items-center justify-center relative -mt-5"
+    >
+      {/* Name */}
+      <h1 className="text-9xl pirata-one-regular text-center z-10 mt-2">
+        Mirza Kazim Husain
+      </h1>
 
-    {/* Image: Left side */}
-    <div className="w-full md:w-[45%] flex justify-center">
+      {/* Image */}
       <img
-        src={profile_img}
+        src={profile_image}
         alt="Kazim's portrait"
-        className="w-72 h-72 rounded-full object-cover shadow-xl"
+        className="w-96 h-[650px] object-cover -mt-40 z-20"
       />
-    </div>
 
-
-    {/* Text: Right side */}
-    <div className="w-full md:w-[55%] max-w-4xl flex flex-col gap-4 text-left">
-      <h1 className="text-4xl font-bold mb-4">About Me</h1>
-
-      <p id="about-1" className="opacity-0 transition-opacity duration-500">{data.paragraph1[0]}</p>
-      <p id="about-2" className="opacity-0 transition-opacity duration-500">{data.paragraph2[0]}</p>
-      <p id="about-3" className="opacity-0 transition-opacity duration-500">{data.paragraph3[0]}</p>
-
-      <div id="about-quote" className="opacity-0 transition-opacity duration-500 pt-6 border-t border-white/20">
-        <p className="italic text-lg text-gray-400">"{data.quote.text}"</p>
-        <p className="text-sm text-gray-500 text-right">– {data.quote.author}</p>
-      </div>
-    </div>
-  </section>
-
+      {/* Subtitle */}
+      <h1 className="text-9xl pirata-one-regular text-center z-30 -mt-12">
+        Recent Computer Science Graduate
+      </h1>
+    </section>
   )
 }
 

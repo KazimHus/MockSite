@@ -1,6 +1,9 @@
 import profileimg from "/assets/images/profileimg.png"
 export const profile_img = profileimg
 
+import profileimage from "/assets/images/profileimage.png"
+export const profile_image = profileimage
+
 import Csharp from "/assets/icons/csharp.svg"
 export const csharp = Csharp
 
@@ -45,4 +48,3 @@ export const spark = Spark
 
 import SeattleU from "/assets/images/SU.jpg"
 export const SU = SeattleU
-
