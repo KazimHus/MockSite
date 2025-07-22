@@ -1,9 +1,6 @@
 import profileimg from "/assets/images/profileimg.png"
 export const profile_img = profileimg
 
-import profileimage from "/assets/images/profileimage.png"
-export const profile_image = profileimage
-
 import Csharp from "/assets/icons/csharp.svg"
 export const csharp = Csharp
 
@@ -48,3 +45,25 @@ export const spark = Spark
 
 import SeattleU from "/assets/images/SU.jpg"
 export const SU = SeattleU
+
+import Guitar from "/assets/videos/guitar.mp4"
+export const guitar = Guitar
+
+import Drawings from "/assets/videos/drawings.mp4"
+export const drawings = Drawings
+
+import Github from "/assets/images/github.svg"
+export const github = Github
+
+import Gmail from "/assets/images/gmail.svg"
+export const gmail = Gmail
+
+import Instagram from "/assets/images/instagram.svg"
+export const instagram = Instagram
+
+import Linkedin from "/assets/images/linkedin.svg"
+export const linkedin = Linkedin
+
+import Phone from "/assets/images/phone.svg"
+export const phone = Phone
+

@@ -5,11 +5,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const navLists = [
-  { name: 'About', link: 'about' },
+  { name: 'Main', link: 'about' },
   { name: 'Work Experience', link: 'workexperience' },
   { name: 'Skills', link: 'skills' },
   { name: 'Education', link: 'education' },
-  { name: 'Projects', link: 'projects' }
+  { name: 'Personal Projects', link: 'projects' },
+  { name: 'Outside of Tech', link: 'hobbies' },
+  { name: 'Contact', link: 'contact' }
 ]
 
 const Navbar = () => {
