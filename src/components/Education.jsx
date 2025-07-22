@@ -11,17 +11,18 @@ const Education = () => {
     }))
 
   return (
-    <section id="education" className="flex flex-col md:flex-row w-full min-h-screen bg-main text-black pt-24">
+    <section id="education" className="flex flex-col md:flex-row w-full bg-main text-black py-28">
 
-      <div className="w-full md:w-[80%] flex items-end justify-start px-40 pb-56 text-grey">
+      <div className="w-full md:w-[80%] flex flex-col items-start justify-end px-40 text-grey">
         <h1 className="text-9xl pirata-one-regular">{data.name[0]}</h1>
+        <p className="mt-5 text-xl font-semibold text-bright-orange texturina-text-bold">{data.date[0]}</p>
       </div>
 
 
-      <div className="w-full flex flex-col justify-start pt-14 pb-10 gap-6 -ml-20">
+      <div className="w-full flex flex-col justify-start pt-10 gap-6 -ml-20">
 
         <div className="space-y-2">
-          <p className="text-xl font-semibold text-bright-orange texturina-text-bold">{data.date[0]}</p>
+          
           <p className="text-lg font-semibold texturina-text-bold">{data.major[0]}</p>
           <p className="text-lg font-semibold texturina-text-bold">{data.minor[0]}</p>
           <p className="text-lg texturina-text-bold">{data.scholarship[0]}</p>

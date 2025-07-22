@@ -33,7 +33,10 @@ const projects = [
 
 const Projects = () => {
   return (
-<section id="projects" className="bg-main text-grey px-6 py-20">
+<section id="projects" className="bg-main text-grey px-6 py-10 pt-32">
+
+
+  <h1 className="text-6xl pirata-one-regular text-center mb-10">Hobbies</h1>
 
   <div className="flex flex-wrap justify-center gap-x-8 gap-y-6">
     {projects.slice(0, 5).map((proj, index) => (
